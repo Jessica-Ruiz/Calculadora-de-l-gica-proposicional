@@ -1,0 +1,23 @@
+import pandas as pd
+#la libreria que recomendo el profesor
+import itertools
+#itertools es una libreria de python que crea y manipula iteradores que permiten crear bucles y manejar secuencias rapidamente, ustedes diran si la quieren utilizar para la calculadora, les dejo el interrogante
+#podemos crear un menu 
+#logica antes
+def calcular_tabla_verdad(variables, funcion):
+    # Generar todas las combinaciones de valores de verdad
+    #con el itertools se pueden crear listas de combinaciones para las variables que se definan.
+    combinaciones = list(itertools.product([False, True], repeat=len(variables)))
+def main():
+    print("Calculadora de Logica Proposicional")
+    print("Opciones:")
+    print("1. Negación (¬A)")
+    print("2. Conjunción (A ∧ B)")
+    print("3. Disyunción (A ∨ B)")
+    print("4. Condicional (A → B)")
+    print("5. Bicondicional (A ↔ B)")
+    print("6. Salir")
+
+if __name__ == "__main__":
+    main()
+Espero un aporte pronto de parte de ustedes
